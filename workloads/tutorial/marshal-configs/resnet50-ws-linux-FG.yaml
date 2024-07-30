@@ -1,0 +1,9 @@
+{
+  "name" : "resnet50-ws-linux-FG",
+  "base" : "br-base.json",
+  "workdir" : "..",
+  "host-init" : "build.sh",
+  "overlay" : "overlay",
+  "command" : "firesim-start-trigger && /root/resnet50-linux && firesim-end-trigger",
+  "spike-args" : "--extension=gemmini"
+}
