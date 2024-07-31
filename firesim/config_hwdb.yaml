@@ -1,0 +1,18 @@
+# Anjelica's HWDB entries
+
+# the `bitstream_tar` field references the file path to the `firesim.tar.gz` file, in the `results-build` folder
+
+alveo_u280_firesim_gemmini_rocket_singlecore_no_nic:
+    bitstream_tar: #file:///home/anjelica/chipyard/sims/firesim/deploy/results-build/2024-07-02--20-04-24-alveo_u280_firesim_gemmini_rocket_singlecore_no_nic/cl_xilinx_alveo_u280-firesim-FireSim-FireSimLeanGemminiRocketConfig-BaseXilinxAlveoU280Config/firesim.tar.gz
+    deploy_quintuplet_override: null
+    custom_runtime_config: null
+
+alveo_u280_firesim_mediumgemmini_rocket_singlecore_no_nic:
+    bitstream_tar: #file:///home/anjelica/chipyard/sims/firesim/deploy/results-build/2024-07-30--20-24-52-alveo_u280_firesim_mediumgemmini_rocket_singlecore_no_nic/cl_xilinx_alveo_u280-firesim-FireSim-FireSimMediumGemminiRocketConfig-BaseXilinxAlveoU280Config/firesim.tar.gz
+    deploy_quintuplet_override: null
+    custom_runtime_config: null
+
+alveo_u280_firesim_printfgemmini_rocket_singlecore_no_nic:
+    bitstream_tar: #file:///home/anjelica/chipyard/sims/firesim/deploy/results-build/2024-07-30--22-48-12-alveo_u280_firesim_printfgemmini_rocket_singlecore_no_nic/cl_xilinx_alveo_u280-firesim-FireSim-FireSimLeanGemminiPrintfRocketConfig-BaseXilinxAlveoU280Config/firesim.tar.gz
+    deploy_quintuplet_override: null
+    custom_runtime_config: null
