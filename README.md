@@ -13,12 +13,22 @@ This is a folder with all workloads used in this projects. Put the contents of t
 
 You will notice these folders:
 - **tutorial** -> uses Gemmini's imagenet/resnet50 programs (based off of Firesim workshop at ASPLOS 2023)
+  - key findings located in `'workload results'/tutorial(resnet50)`
 - **customworkloads** -> two simple matrix multiplication programs from [this repository](https://github.com/stevenyuser/gemmini-stuff/tree/main)
+  - key findings located in `'workload results'/matmul`
 
 In each folder, there are these files:
 - **marshal-configs** -> config files FireMarshal uses to generate workloads
 - **build.sh** -> bash script to build software workloads used in Firesim
 - **run.sh** -> bash script to automate building and installation of workloads into Firesim
+
+## Workload Results
+This folder contains the most important results after running a Firesim workload. In your chipyard directory, these results can be found in `chipyard/sims/firesim/deploy/results-workload`.
+
+You will find these direcfiles/directorys:
+- **README** -> a file that summarizes key findings
+- **tutorial(resnet50)** -> results from running the workloads in the `workloads/tutorial` folder
+- **matmul** -> results from running the workloads in the `workloads/customworkloads` folder
 
 ## Firesim
 This folder contains the build config files and results of bitstreams I used that no not come with the Chipyard 1.11.0 repository. 
