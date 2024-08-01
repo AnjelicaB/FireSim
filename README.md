@@ -21,7 +21,7 @@ In each folder, there are these files:
 - **marshal-configs** -> config files FireMarshal uses to generate workloads
 - **build.sh** -> bash script to build software workloads used in Firesim
 - **run.sh** -> bash script to automate building and installation of workloads into Firesim
-- If they contain `.c` files, put them in the directory specified at the top of those files
+- If there are additional files, there will also be a **README** to explain them
 
 ## Workload Results
 This folder contains the most important results after running a Firesim workload. In your chipyard directory, these results can be found in `chipyard/sims/firesim/deploy/results-workload`.
@@ -30,7 +30,7 @@ You will find these files/directorys:
 - **README** -> a file that summarizes key findings
 - **tutorial(resnet50)** -> results from running the workloads in the `workloads/tutorial` folder
 - **matmul** -> results from running the workloads in the `workloads/customworkloads` folder
-The folders inside each directies refer to the builds. The results of each workload can be found in their corresponding folders/
+The folders inside each directies refer to the builds. The results of each workload can be found in their corresponding folders.
 
 ## Firesim
 This folder contains the build config files and results of bitstreams I used that no not come with the Chipyard 1.11.0 repository. 
