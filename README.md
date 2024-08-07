@@ -1,5 +1,5 @@
 # FireSim
-Working in Firesim to analyse memory behavior of various SoCs. This repository contains all necessary changes 
+Working in Firesim to analyse memory behavior of various SoCs. This repository summarizes all key updates. To view my working repository go to [chipyard-a](https://github.com/AnjelicaB/chipyard-a.git)
 
 ## Prefetching/Dependencies
 - Chipyard 1.11.0 (this version of chipyard supports the most recent version of Firesim, but does not support full Gemmini functionalities)
