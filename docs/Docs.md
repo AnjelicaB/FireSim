@@ -33,6 +33,7 @@ As mentioned earlier, you entire target design (SoC) is just the chip, but it in
 1. Models
 2. Channels
 3. Tokens
+   
 The models are the various components, the tokens are the inputs and outputs between each model, and the channels are how the tokens are transported. Imagin a world where the only mode of transportation is airplanes. The models are the cities, tokens are people, and channels are the airplanes. The target flow graph just describes the movement of people within the cities.
 
 In general, we would have one model that represents the chip, another model for memory and another model for IO etc. FireSim controls the flow of tokens between the models in each clock cycle, so that for every cycle, the flow of tokens between the models accurately represents the flow of data on your SoC. This way, for every cycle, the modeled chip will have the same performance as designed. Back to the airport analogy, imagine controlling the flow of tokens as airport customs. No matter how busy the airport is, the airplanes will only carry the number of customers it is planned to carry. So the number of people coming in and out of your city is irrespective of how busy the other cities are. This is called, latency-insensitivity.
