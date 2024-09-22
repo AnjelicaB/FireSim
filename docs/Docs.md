@@ -44,3 +44,5 @@ Often times the FPGA does not have enough resources to model the entire SoC/targ
 ## 2. How to set it up
 
 FireSim uses
+
+![Firesim manager imange](FireSim-manager-image.png)
