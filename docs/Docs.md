@@ -1,5 +1,3 @@
-# FireSim Tutorial and Documentation
-
 Here I aim to provide a more beginner friendly tutorial to Firesim, including:
 1. [Theory of FireSim](https://github.com/AnjelicaB/FireSim/blob/main/Docs.md#L12)
 2. How to set it up
@@ -33,9 +31,16 @@ As mentioned earlier, you entire target design (SoC) is just the chip, but it in
 1. Models
 2. Channels
 3. Tokens
-   
+
+<img width="653" alt="image" align="center" src="https://github.com/user-attachments/assets/67e79f95-9728-43de-a4f1-34d1d2be3e0d"> <br/>
+<em> **Figure1:** A example of target flow graph: 5 models represented in transformed RTL, abstract RTL, and software connected through channels </em>
+
 The models are the various components, the tokens are the inputs and outputs between each model, and the channels are how the tokens are transported. Imagin a world where the only mode of transportation is airplanes. The models are the cities, tokens are people, and channels are the airplanes. The target flow graph just describes the movement of people within the cities.
 
 In general, we would have one model that represents the chip, another model for memory and another model for IO etc. FireSim controls the flow of tokens between the models in each clock cycle, so that for every cycle, the flow of tokens between the models accurately represents the flow of data on your SoC. This way, for every cycle, the modeled chip will have the same performance as designed. Back to the airport analogy, imagine controlling the flow of tokens as airport customs. No matter how busy the airport is, the airplanes will only carry the number of customers it is planned to carry. So the number of people coming in and out of your city is irrespective of how busy the other cities are. This is called, latency-insensitivity.
 
 Often times the FPGA does not have enough resources to model the entire SoC/target flow graph if they are all explicitly expressed in hardware RTL. What FireSim did to work around this is to not use explicitly RTL model for the entire design. Instead, only your chip will be expressed in hardware RTL, and the peripherals (including DRAM) are modeled using abstract RTL or software. To put it simply, abstract RTL and software model the functionality and performance of your target, instead of registers and clocks. 
+
+## 2. How to set it up
+
+FireSim uses
