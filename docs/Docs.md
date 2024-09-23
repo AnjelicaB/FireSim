@@ -43,6 +43,19 @@ Often times the FPGA does not have enough resources to model the entire SoC/targ
 
 ## 2. How to set it up
 
-FireSim uses
+!!! Here I talk about how to set up FireSim on a local FPGA (Xilinx U280). If you're using another FPGA, the setup would be lightly different, but this section can still be useful guidance.
 
-![Firesim manager imange](FireSim-manager-image.png)
+To run FireSim, you need three machines as shown below in figure 2: the build farm machine, the runfarm machine, the manager machine. The build farm machine builds the bitstreams of your target design using Vivado lab according to your FPGA specification, whereas the runfarm machine puts your bitstream on the FPGA and runs the workload. The manager machine "manages" the two machines; it is the machine you have direct control over. Below I will go over steps to install FireSim and get everything running.
+
+![Firesim manager image](FireSim-manager-image.png) <br/>
+<em> **Figure2:** FireSim machine setup </em>
+
+### Setup
+
+**Ubuntu 20.04 LTS is preferred as host OS**
+
+1. To set up your system: follow [this FireSim page](https://docs.fires.im/en/latest/Local-FPGA-Initial-Setup.html). This includes installing FPGA drivers, downloading Vivado and setting up your FireSim environment.
+2. To set up your FPGA: follow [this FireSim page](https://docs.fires.im/en/latest/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Initial-Setup/Xilinx-Alveo-U280.html). This makes sure that your FPGA is connected on Vivado
+3. To begin setting up your FireSim Repository: follow [the Chipyard page](https://chipyard.readthedocs.io/en/stable/Chipyard-Basics/Initial-Repo-Setup.html#initial-repository-setup). Go through steps 1.4.1.2 through 1.4.3.
+4. To continue setting up your FireSim Repository: follow [from this section onward](https://docs.fires.im/en/latest/Getting-Started-Guides/On-Premises-FPGA-Getting-Started/Repo-Setup/Xilinx-Alveo-U280.html#initializing-firesim-config-files), starting with 'Initializing FireSim Config Files'
+   
